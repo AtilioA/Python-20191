@@ -78,5 +78,4 @@ def tabuleiro(x, y):
     else:
         return False
 
-
-tabuleiro(8, 8)
+# tabuleiro(8, 8)

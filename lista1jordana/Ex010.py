@@ -57,6 +57,6 @@ def quadrantesRetangulo(x1, y1, x2, y2):
     else:
         print('NAO SEI')
 
-print(quadrantesRetangulo(1, 1, 2, 2))
-print(quadrantesRetangulo(-1, 1, 2, -2))
-print(quadrantesRetangulo(-1, 1, -2, -2))
+# print(quadrantesRetangulo(1, 1, 2, 2))
+# print(quadrantesRetangulo(-1, 1, 2, -2))
+# print(quadrantesRetangulo(-1, 1, -2, -2))
