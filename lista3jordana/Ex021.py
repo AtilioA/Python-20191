@@ -47,11 +47,6 @@ def reajusteSalário(salárioColaborador):
     elif (salárioColaborador >= 1500):
         salárioNovo = salárioMaiorQue1500(salárioColaborador)
 
-    # # i. o salário antes do reajuste;
-    # ii. o percentual de aumento aplicado;
-    # iii. o valor do aumento;
-    # iv. o novo salário, após o aumento
-
     print("Salário antes do reajuste: {salárioAntigo}")
     print("Percentual do reajuste: {percentualReajuste}")
     print("Valor do reajuste: {valorReajuste}")

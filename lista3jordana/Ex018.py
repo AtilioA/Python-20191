@@ -33,11 +33,9 @@ def descontaTudo(salario):
 
 
 def descontaSalario(salarioBruto):
-    salarioLiquido = salarioBruto
-
     desconto = descontaTudo(salarioBruto)
 
-    salarioLiquido = salarioLiquido - desconto
+    salarioLiquido = salarioBruto - desconto
 
     return salarioLiquido
 
