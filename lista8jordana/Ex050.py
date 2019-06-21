@@ -2,7 +2,9 @@
 
 l = [[2,3,4],[2],[5,7,9,9,6,2,1],[2,2]]
 
-def tamanhoSublista(lista):
-    
 
-print(tamanhoSublista(l))
+def tamanhoSublista(lista):
+    return list(map(len, lista))
+
+
+print(tamanhoSublistas(l))
