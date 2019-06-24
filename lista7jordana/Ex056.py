@@ -40,14 +40,6 @@ def media_turma(lista):
     return media
 
 
-alunos = [
-    [1, 150], [10, 150], [21, 160], [34, 160],
-    [21, 60], [11, 0], [4, 0], [100, 50]
-]
-
-print(media_turma(alunos))
-
-
 def conta_baixinhos(lista, media):
     if not lista:
         return 0
@@ -56,5 +48,12 @@ def conta_baixinhos(lista, media):
     elif get_altura(lista[0]) < media:
         return 1 + conta_baixinhos(lista[1:], media)
 
+
+alunos = [
+    [1, 150], [10, 150], [21, 160], [34, 160],
+    [21, 60], [11, 0], [4, 0], [100, 50]
+]
+
+print(media_turma(alunos))
 
 print(conta_baixinhos(alunos, media_turma(alunos)))
