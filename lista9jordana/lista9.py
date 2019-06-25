@@ -30,6 +30,15 @@ def div(x, y):
         return 1
 
 
+def mod(x, y):
+    if abs(x) > abs(y):
+        return mod(abs(x) - abs(y), abs(y))
+    elif abs(x) < abs(y):
+        return abs(x)
+    else:
+        return 0
+
+
 # d) Calcule o somatório dos elementos de uma lista.
 def somatorio(lista):
     if lista == []:
@@ -65,7 +74,6 @@ def soma_par_sub_ímpar(lista):
         return lista[0] + soma_par_sub_ímpar(lista[1:])
     elif é_ímpar(lista[0]):
         return -lista[0] + soma_par_sub_ímpar(lista[1:])
-
 
 lista = [2, 5, 10]
 # print(soma_par_sub_ímpar(lista))
@@ -199,6 +207,7 @@ def resto_div3_pares(n):
 
 # q) Dada uma lista, obtenha as duplas dos elementos consecutivos de ordem ímpar da lista.
 # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1] => [(10, 8), (8, 6), (6, 4), (4, 2)]
+# l = [10, 9, 8, 7, 5, 4, 3, 2, 1]
 
 
 # r) Dada uma lista, obtenha as triplas dos elementos consecutivos divisíveis por 3.
@@ -220,6 +229,37 @@ def resto_div3_pares(n):
 # w)
 
 
+
+# def sao_todos_distintos_aplicativo(lista):
+    # AAA
+    # return not mantem_duplicata(lista)
+
+# print(sao_todos_distintos_aplicativo([1,2,3,4,5,5]))
+
+
+def mantem_duplicata(lista):
+    if not lista:
+        return lista
+    elif lista[0] in lista[1:]:
+        return [lista[0]] + mantem_duplicata(lista[1:])
+    else:
+        return mantem_duplicata(lista[1:])
+
+
+def sao_todos_distintos_recursivo(lista):
+    return not mantem_duplicata(lista)
+
+print(sao_todos_distintos_recursivo([1,2,3,4,5,5]))
+
+
+def ao_menos_dois_iguais_recursivo(lista):
+    if mantem_duplicata(lista):
+        return True
+    else:
+        return False
+
+print(ao_menos_dois_iguais_recursivo([1,2,3,4,5,5]))
+
 # x) Dadas duas listas de elementos distintos, determinar a união delas.
 # Ex: [1,2,3,4] e [3,4,5,6] => [1,2,3,4,5,6]
 def uniao(l1, l2):
@@ -235,15 +275,6 @@ def uniao(l1, l2):
 
 
 # y) Dadas duas listas de elementos distintos, determinar a interseção delas.
-def mantem_duplicata(lista):
-    if not lista:
-        return lista
-    elif lista[0] in lista[1:]:
-        return [lista[0]] + mantem_duplicata(lista[1:])
-    else:
-        return mantem_duplicata(lista[1:])
-
-
 def intersecao(l1, l2):
     if not l1 or not l2:
         return []
