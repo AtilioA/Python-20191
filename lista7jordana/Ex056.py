@@ -43,9 +43,9 @@ def media_turma(lista):
 def conta_baixinhos(lista, media):
     if not lista:
         return 0
-    elif get_idade(lista[0]) < 13:
-        return 0
-    elif get_altura(lista[0]) < media:
+    elif get_idade(lista[0]) < 13 and get_altura(lista[0]) > media:
+        return 0 + conta_baixinhos(lista[1:], media)
+    elif get_idade(lista[0]) > 13 and get_altura(lista[0]) < media:
         return 1 + conta_baixinhos(lista[1:], media)
 
 
