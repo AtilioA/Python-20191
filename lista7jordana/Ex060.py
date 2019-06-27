@@ -49,8 +49,9 @@ def intercala(l1, l2):
     else:
         return [l1[0]] + [l2[0]] + intercala(l1[1:], l2[1:])
 
-l1 = [1,4,7]
-l2 = [1,7,8,10]
+
+l1 = [1, 4, 7]
+l2 = [1, 7, 8, 10]
 
 print(uniao(l1, l2))
 print(intersecao(l1, l2))

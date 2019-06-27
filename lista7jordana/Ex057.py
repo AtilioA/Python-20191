@@ -3,8 +3,10 @@
 # verificando-se apenas o ano de seu nascimento do seguinte modo:
 # [...]
 
+
 def lista_signos():
-    signos = ['macaco', 'galo', 'cão', 'porco', 'rato', 'boi', 'tigre', 'coelho', 'dragão', 'serpente', 'cavalo', 'carneiro']
+    signos = ['macaco', 'galo', 'cão', 'porco', 'rato', 'boi',
+              'tigre', 'coelho', 'dragão', 'serpente', 'cavalo', 'carneiro']
     return signos
 
 

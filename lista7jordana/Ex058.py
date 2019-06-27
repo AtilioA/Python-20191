@@ -14,16 +14,16 @@ def esta_ordenada(lista):
         return False
 
 
-print(esta_ordenada([1,5,3]))
-print(esta_ordenada([3,2,1]))
-print(esta_ordenada([3,2,2]))
+print(esta_ordenada([1, 5, 3]))
+print(esta_ordenada([3, 2, 1]))
+print(esta_ordenada([3, 2, 2]))
 
-print(esta_ordenada([3,5,7,5]))
-print(esta_ordenada([3,5,7,9]))
-print(esta_ordenada([3,3,3,3]))
+print(esta_ordenada([3, 5, 7, 5]))
+print(esta_ordenada([3, 5, 7, 9]))
+print(esta_ordenada([3, 3, 3, 3]))
 
 print(esta_ordenada([3]))
 print(esta_ordenada([]))
 
-print(esta_ordenada([[2,9], [3,3], [5]]))
-print(esta_ordenada([[2,9], [3,3], [1]]))
+print(esta_ordenada([[2, 9], [3, 3], [5]]))
+print(esta_ordenada([[2, 9], [3, 3], [1]]))

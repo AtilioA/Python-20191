@@ -10,6 +10,6 @@ def posicao(lNumeros, valor):
     elif valor not in lNumeros:
         return -1
     else:
-        return lNumeros.index(valor) # eu sou pilantra
+        return lNumeros.index(valor)  # eu sou pilantra
 
 # print(posicao([2,6,7,8,5,6,3,2,6,5,4], 6))
